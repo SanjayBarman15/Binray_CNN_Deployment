@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.venv/
+
+# Training data (do not upload huge datasets)
+training_set/
+test_set/
+dataset/
+data/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Node / Frontend
+node_modules/
+.next/
+dist/
+build/
+
+# Env files
+.env
+.env.*
+.env.local
+.env.development.local
