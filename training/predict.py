@@ -30,13 +30,23 @@ def predict_image(image_path):
         print(f"Error predicting image: {e}")
         return None
 
+# if __name__ == "__main__":
+#     if len(sys.argv) > 1:
+#         img_path = sys.argv[1]
+#         predict_image(img_path)
+#     else:
+#         # Default test image if no argument provided
+#         # You can change this path or pass a path as an argument
+#         default_path = 'test_set/cats/cat.4001.jpg' 
+#         print(f"No image path provided. Using default: {default_path}")
+#         predict_image(default_path)
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         img_path = sys.argv[1]
-        predict_image(img_path)
     else:
-        # Default test image if no argument provided
-        # You can change this path or pass a path as an argument
-        default_path = 'test_set/cats/cat.4001.jpg' 
-        print(f"No image path provided. Using default: {default_path}")
-        predict_image(default_path)
+        print("No image path provided.")
+        print("👉 Please enter the image path below:")
+        img_path = input("Image Path: ")
+
+    predict_image(img_path)
+
