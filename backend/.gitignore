@@ -45,8 +45,6 @@ logs/
 *.sqlite3
 
 # Model files (often large — keep out of repo)
-*.h5
-final_model.h5
 *.hdf5
 
 # TensorFlow / Keras saved model directories
